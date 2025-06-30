@@ -9,10 +9,10 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex()],
 	kit: {
 		adapter: adapter(),
-		// only set this if you don't want it served directly from the root
-		// paths: {
-		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		// }
+		paths: {
+			// leave empty so it serves directly from the root
+			base: ''
+		}
 	},
 	extensions: ['.svelte', '.svx']
 };
