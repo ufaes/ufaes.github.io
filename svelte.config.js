@@ -6,7 +6,11 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
-	preprocess: [vitePreprocess(), mdsvex()],
+	preprocess: [vitePreprocess(), mdsvex({
+		extensions: ['.md'],
+		// For some reason relative paths don't work, so we use the absolute path here instead
+		layout: { _: process.cwd() + '/src/lib/markdown-layouts/default.svelte' }
+	})],
 	kit: {
 		adapter: adapter(),
 		paths: {
@@ -14,7 +18,7 @@ const config = {
 			base: ''
 		}
 	},
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx', '.md']
 };
 
 export default config;
