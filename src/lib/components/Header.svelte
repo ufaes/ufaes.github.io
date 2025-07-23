@@ -1,6 +1,7 @@
 <script>
 	import NavigationLinks from '$lib/components/NavigationLinks.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	// TODO: make text of link highlight the accent color if active page
 </script>
 
 <div class="navbar bg-base-200 shadow-sm">
@@ -26,22 +27,18 @@
 				tabindex="0"
 				class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
 			>
-				<li><a>Item 1</a></li>
-				<li>
-					<a>Parent</a>
-					<ul class="p-2">
-						<NavigationLinks />
-					</ul>
-				</li>
-				<li><a>Item 3</a></li>
+				<NavigationLinks />
 			</ul>
 		</div>
-		<a class="btn btn-ghost text-xl" href="/">AES @ UF</a>
+		<a class="btn btn-ghost text-xl hidden lg:block" href="/">AES @ UF</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
 			<NavigationLinks />
 		</ul>
+	</div>
+	<div class="navbar-center lg:hidden">
+		<a class="btn btn-ghost text-xl" href="/">AES @ UF</a>
 	</div>
 	<div class="navbar-end mr-5">
 		<ThemeToggle />
