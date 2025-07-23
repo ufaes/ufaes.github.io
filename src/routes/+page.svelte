@@ -10,8 +10,8 @@
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
       <p class="mb-5">put some introductory copy for the club here.</p>
-      <p class="mb-5">furthermore, change the background to something cool and us-related: concert pics?</p>
-      <button class="btn btn-primary">Get Started</button>
+      <p class="mb-5">furthermore, change the background to something cool and us-related: concert pics? a collage of some of the cool stuff we've made? I leave it to someone who understands design better than me.</p>
+      <a class="btn btn-primary" href="/about">Learn More</a>
     </div>
   </div>
 </div>

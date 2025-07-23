@@ -6,8 +6,10 @@
 	let { children } = $props();
 </script>
 
-<Header/>
+<Header />
 
-{@render children()}
+<div>
+	{@render children()}
+</div>
 
-<Footer/>
+<Footer />

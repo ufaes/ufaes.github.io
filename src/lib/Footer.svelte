@@ -1,4 +1,4 @@
-<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+<footer class="footer sm:footer-horizontal bg-base-300 text-neutral-content items-center p-4">
 	<aside class="grid-flow-col items-center">
         <img src="logo.png" alt="AES UF Logo" class="max-h-18 block pr-5" />
 		<p>Copyright © {new Date().getFullYear()} - All right reserved</p>
