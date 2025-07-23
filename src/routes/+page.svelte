@@ -1,6 +1,10 @@
 <!-- <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p> -->
 
+<script>
+  import HomepageContent from './HomepageContent.md';
+</script>
+
 <div
   class="hero min-h-screen"
   style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
@@ -14,4 +18,8 @@
       <a class="btn btn-primary" href="/about">Learn More</a>
     </div>
   </div>
+</div>
+
+<div class="prose mx-auto my-5">
+  <HomepageContent />
 </div>
