@@ -1,5 +1,6 @@
 <script>
 	import NavigationLinks from './NavigationLinks.svelte';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 </script>
 
 <div class="navbar bg-base-200 shadow-sm">
@@ -35,7 +36,7 @@
 				<li><a>Item 3</a></li>
 			</ul>
 		</div>
-		<a class="btn btn-ghost text-xl">AES @ UF</a>
+		<a class="btn btn-ghost text-xl" href="/">AES @ UF</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
@@ -43,6 +44,6 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
-		<a class="btn">Button</a>
+		<ThemeToggle />
 	</div>
 </div>

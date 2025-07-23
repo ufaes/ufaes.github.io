@@ -45,6 +45,7 @@
 		"vitest-browser-svelte": "^0.1.0"
 	},
 	"dependencies": {
-		"daisyui": "^5.0.43"
+		"daisyui": "^5.0.43",
+		"theme-change": "^2.5.0"
 	}
 }
