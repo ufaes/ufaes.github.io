@@ -9,7 +9,7 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex({
 		extensions: ['.md'],
 		// For some reason relative paths don't work, so we use the absolute path here instead
-		layout: { _: process.cwd() + '/src/lib/MarkdownLayout.svelte' }
+		layout: { _: process.cwd() + '/src/lib/markdown-layouts/default.svelte' }
 	})],
 	kit: {
 		adapter: adapter(),

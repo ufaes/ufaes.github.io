@@ -1,5 +1,5 @@
 <script>
-	import NavigationLinks from './NavigationLinks.svelte';
+	import NavigationLinks from '$lib/components/NavigationLinks.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 </script>
 
@@ -43,7 +43,7 @@
 			<NavigationLinks />
 		</ul>
 	</div>
-	<div class="navbar-end">
+	<div class="navbar-end mr-5">
 		<ThemeToggle />
 	</div>
 </div>

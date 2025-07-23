@@ -24,4 +24,4 @@ ditto
 (on hiatus? maybe keep separate or add explainer that if interest we can make stuff)
 
 # Get Involved
-software lead application maybe?
+link to lead application maybe?
