@@ -1,21 +1,10 @@
-import type { LoadEvent } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 
-interface MarkdownModule {
-	metadata: {
-		title: string;
-		date?: string;
-	};
-	default: typeof import('*.svelte').default;
-}
-
-export async function load({ params }: LoadEvent<{ slug: string }>) {
-	const post = (await import(`../${params.slug}.md`)) as MarkdownModule;
-	const { title, date } = post.metadata;
-	const content = post.default;
-
+export const load: PageLoad = ({ params }) => {
 	return {
-		content,
-		title,
-		date
+		post: {
+			title: `Title for ${params.slug} goes here`,
+			content: `Content for ${params.slug} goes here`
+		}
 	};
-}
+};

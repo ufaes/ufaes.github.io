@@ -1,18 +1,10 @@
 <script lang="ts">
-	import type { Component } from 'svelte';
+	// this $types module is generated based on the contents of the pageLoad params in +page.ts, so it stays typesafe
+	// https://svelte.dev/docs/kit/load
+	import type { PageProps } from './$types';
 
-	interface PageData {
-		content: Component;
-		title: string;
-		date?: string;
-	}
-
-	let { data }: { data: PageData } = $props();
-	const Content = data.content;
+	let { data }: PageProps = $props();
 </script>
 
-<article>
-	<h1>{data.title}</h1>
-	<p>Published: {data.date}</p>
-	<Content />
-</article>
+<h1>{data.post.title}</h1>
+<div>{@html data.post.content}</div>
