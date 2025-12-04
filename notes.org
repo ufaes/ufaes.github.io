@@ -1,0 +1,7 @@
+* general blog inspiration
+https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
+this gave the initial ideas, but it's pretty outdated now since it's svelte 4 and almost all of the syntax has changed. It's also not typescript
+
+* setting up dynamic route generation
+https://mli.puffinsystems.com/blog/sveltekit-blog-docs-with-mdsvex
+
