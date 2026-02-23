@@ -1,0 +1,25 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Node
+/node_modules/
+/npm-debug.log*
+/yarn.lock
+/pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Hugo stats (Tailwind build artifact)
+hugo_stats.json
+assets/notwatching/hugo_stats.json
+
+# Local environment
+.env
+.env.*
